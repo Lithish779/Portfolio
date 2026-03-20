@@ -6,10 +6,6 @@ const HeroSection = () => {
   return (
     <section id="hero" className="hero-section section">
       <div className="hero-content-wrapper">
-        <div className="hero-image-container">
-          <img src="/profile.jpeg" alt="Lithish Kumar" className="hero-profile-pic" />
-        </div>
-        
         <div className="hero-text-content">
           <h1 className="hero-title">Lithish Kumar</h1>
           <h2 className="hero-subtitle">Full Stack Developer</h2>
@@ -26,6 +22,10 @@ const HeroSection = () => {
               View Work
             </Link>
           </div>
+        </div>
+
+        <div className="hero-image-container">
+          <img src="/profile.jpeg" alt="Lithish Kumar" className="hero-profile-pic" />
         </div>
       </div>
     </section>
