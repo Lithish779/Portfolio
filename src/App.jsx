@@ -41,8 +41,8 @@ function App() {
         <AboutSection />
         <ServicesSection />
         <SkillsSection />
-        <CertificationsSection />
         <ProjectsSection />
+        <CertificationsSection />
         <ContactSection />
       </main>
       <Footer />

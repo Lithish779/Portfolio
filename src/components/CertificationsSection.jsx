@@ -15,13 +15,15 @@ const CertificationsSection = () => {
       title: 'Oracle Certified Associate',
       issuer: 'Oracle',
       description: 'Credentials verifying foundational knowledge and skills in database management and SQL programming.',
-      icon: <ShieldCheck size={32} className="cert-icon" />
+      icon: <ShieldCheck size={32} className="cert-icon" />,
+      link: '/oracle.png'
     },
     {
       title: 'Infosys Certified Developer',
       issuer: 'Infosys',
       description: 'Certification validating software engineering fundamentals, algorithm design, and application deployment strategies.',
-      icon: <CheckCircle size={32} className="cert-icon" />
+      icon: <CheckCircle size={32} className="cert-icon" />,
+      link: '/infosys.png'
     }
   ];
 

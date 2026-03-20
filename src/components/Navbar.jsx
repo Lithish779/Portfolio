@@ -24,8 +24,8 @@ const Navbar = ({ isDarkMode, toggleTheme }) => {
     { name: 'About', to: 'about' },
     { name: 'Services', to: 'services' },
     { name: 'Skills', to: 'skills' },
-    { name: 'Certifications', to: 'certifications' },
     { name: 'Projects', to: 'projects' },
+    { name: 'Certifications', to: 'certifications' },
   ];
 
   return (

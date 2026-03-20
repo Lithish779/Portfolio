@@ -17,17 +17,19 @@ const ProjectsSection = () => {
     {
       title: 'Patient Monitoring Dashboard',
       description: 'A web-based dashboard for managing patient records and health data, built with PHP and MySQL. Includes REST-style backend endpoints for record creation and retrieval, a structured relational database schema, and responsive UI layouts. Achieved ~25% reduction in invalid data entries through schema optimization and validation.',
+      image: '/patient.png',
       tags: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'Tailwind CSS', 'PHP', 'MySQL'],
       links: {
-        github: '#'
+        github: 'https://github.com/Lithish779/Patient-monitoring-Dashboard'
       }
     },
     {
       title: 'LPU Touch Replica — Flutter Mobile App',
       description: 'A cross-platform mobile application built during my internship at Lovely Professional University. Implements modular UI components, structured navigation, and Firebase Authentication for secure login. Improved the deployment pipeline efficiency by 15% through streamlined remote team workflows.',
+      image: 'https://images.ctfassets.net/23aumh6u8s0i/4TsG2mTRrLFhlQ9G1m19sC/4c9f98d56165a0bdd71cbe7b9c2e2484/flutter',
       tags: ['Flutter', 'Dart', 'Firebase Auth', 'Firebase Realtime Database'],
       links: {
-        github: '#'
+        github: 'https://github.com/Lithish779/Lpu_touch_replica'
       }
     }
   ];
