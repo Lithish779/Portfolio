@@ -6,6 +6,7 @@ import ServicesSection from './components/ServicesSection';
 import SkillsSection from './components/SkillsSection';
 import CertificationsSection from './components/CertificationsSection';
 import ProjectsSection from './components/ProjectsSection';
+import EducationSection from './components/EducationSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import FluidCanvas from './components/FluidCanvas';
@@ -42,6 +43,7 @@ function App() {
         <ServicesSection />
         <SkillsSection />
         <ProjectsSection />
+        <EducationSection />
         <CertificationsSection />
         <ContactSection />
       </main>
