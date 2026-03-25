@@ -13,7 +13,7 @@ const FluidCanvas = () => {
         DENSITY_DISSIPATION: 3,
         VELOCITY_DISSIPATION: 1.5,
         PRESSURE: 0.1,
-        PRESSURE_ITERATIONS: 10, // Reduced from 20 for performance
+        PRESSURE_ITERATIONS: 20,
         CURL: 15,
         SPLAT_RADIUS: 0.5,
         SPLAT_FORCE: 6000,
@@ -24,35 +24,30 @@ const FluidCanvas = () => {
         BACK_COLOR: { r: 0, g: 0, b: 0 },
         TRANSPARENT: false,
         BLOOM: false,
-        SUNRAYS: false, // Disabled for major performance boost
+        BLOOM_ITERATIONS: 8,
+        BLOOM_RESOLUTION: 256,
+        BLOOM_INTENSITY: 2.5,
+        BLOOM_THRESHOLD: 0.3,
+        BLOOM_SOFT_KNEE: 0.7,
+        SUNRAYS: true,
+        SUNRAYS_RESOLUTION: 196,
+        SUNRAYS_WEIGHT: 1.5,
       });
     }
 
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    let lastEvent = null;
-    let frameRequested = false;
-
     const forwardEvent = (e) => {
-      lastEvent = e;
-      if (!frameRequested) {
-        frameRequested = true;
-        requestAnimationFrame(() => {
-          if (lastEvent && canvas) {
-            const clone = new MouseEvent(lastEvent.type, {
-              clientX: lastEvent.clientX,
-              clientY: lastEvent.clientY,
-              movementX: lastEvent.movementX,
-              movementY: lastEvent.movementY,
-              bubbles: false,
-              cancelable: false
-            });
-            canvas.dispatchEvent(clone);
-          }
-          frameRequested = false;
-        });
-      }
+      const clone = new MouseEvent(e.type, {
+        clientX: e.clientX,
+        clientY: e.clientY,
+        movementX: e.movementX,
+        movementY: e.movementY,
+        bubbles: false,
+        cancelable: false
+      });
+      canvas.dispatchEvent(clone);
     };
 
     window.addEventListener('mousemove', forwardEvent);
