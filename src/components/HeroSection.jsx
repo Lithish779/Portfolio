@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import { Github, Linkedin } from 'lucide-react';
 import './HeroSection.css';
 
 const HeroSection = () => {
@@ -21,6 +22,14 @@ const HeroSection = () => {
             <Link to="projects" smooth={true} duration={500} offset={-80} className="btn btn-outline">
               View Work
             </Link>
+            <div className="hero-socials">
+              <a href="https://github.com/Lithish779" target="_blank" rel="noopener noreferrer" className="hero-social-icon">
+                <Github size={24} />
+              </a>
+              <a href="https://linkedin.com/in/lithishkumar779/" target="_blank" rel="noopener noreferrer" className="hero-social-icon">
+                <Linkedin size={24} />
+              </a>
+            </div>
           </div>
         </div>
 
