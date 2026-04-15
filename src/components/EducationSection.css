@@ -92,6 +92,14 @@
   margin-bottom: 1rem;
 }
 
+.education-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
 .education-footer {
   display: flex;
   justify-content: space-between;

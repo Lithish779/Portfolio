@@ -9,21 +9,23 @@ const EducationSection = () => {
       location: "Phagwara, Punjab",
       degree: "Bachelor of Technology in Computer Science and Engineering",
       period: "Aug '23 - Present",
-      details: ""
+      description: "Developed strong skills in full-stack web development, focusing on the MERN stack and backend system design. Gained hands-on experience building real-world applications with authentication, REST APIs, and real-time communication. Strengthened problem-solving through DSA and collaborative team projects."
     },
     {
       institution: "Sri Siddhartha Junior College",
       location: "Madanapalle, Andhra Pradesh",
       degree: "Intermediate (PCM)",
       period: "Apr '21 - Mar '23",
-      details: "Percentage: 94.4"
+      details: "Percentage: 94.4",
+      description: "Built a solid foundation in Mathematics, Physics, and Chemistry, enhancing analytical thinking and problem-solving abilities. Actively improved communication skills and leadership qualities through collaborative learning and group activities."
     },
     {
       institution: "S.P.V.B High School",
       location: "Mulakalacheruvu, Andhra Pradesh",
       degree: "Matriculation",
       period: "Apr '20 - Mar '21",
-      details: "Percentage: 99"
+      details: "Percentage: 99",
+      description: "Developed a strong academic foundation across core subjects with a focus on science and mathematics. Actively involved in sports and team activities, which strengthened discipline, teamwork, and leadership abilities."
     }
   ];
 
@@ -46,6 +48,7 @@ const EducationSection = () => {
                 </span>
               </div>
               <p className="degree">{item.degree}</p>
+              {item.description && <p className="education-desc">{item.description}</p>}
               <div className="education-footer">
                 <span className="location">
                   <MapPin size={14} /> {item.location}
